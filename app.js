@@ -306,10 +306,25 @@ const createUsername = (firstName, lastName) => {
   for (let i = 0; i <= 2; i++) {
     nameOne = nameOne + firstName[i]
   }
-  for (let i = 1; i <= 2; i++) {
+  for (let i = 0; i <= 2; i++) {
     nameTwo = nameTwo + lastName[i]
   }
   return nameOne + nameTwo + total
 }
 
 console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'))
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+const numArgs = (...args) => {
+  return args.length
+}
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4))
